@@ -181,7 +181,7 @@ In order to send updates to the device, we can use `espota.py` script, that is p
 $ python3 /path/to/espota.py -i <IP-address> -f /path/to/firmware.bin -a <password> -r -d
 ```
 
-1. You can get the espota.py script from here.
+1. Use the `espota.py` uploaded here for your convenience.
 2. The `-i` flag is used to specify the IP address of the device. This is obtained from the serial monitor, when the device is connected to the computer.
 3. The `-f` flag is used to specify the path to the firmware file that is to be uploaded to the device. You can generate the firmware file by going to "Sketch -> Export compiled binary" in the Arduino IDE. This will generate a `.bin` file in the sketch directory, or in the `build` directory, inside the sketch directory. The sketch directory is where the `.ino` file is present. 
 Since, you cannot upload a sketch directly to the ESP32 using OTA with this method, a compiled binary must be provided. This binary is then uploaded to the device using the `espota.py` script.
